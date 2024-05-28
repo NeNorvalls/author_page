@@ -43,3 +43,35 @@ const displayAuthors = (authors) => {
 };
 
 loadMoreBtn.addEventListener("click", fetchMoreAuthors);
+
+// Coding Explanation:
+
+// Author Container Element:
+// Retrieves the HTML element with the id "author-container" to dynamically display author information.
+
+// Load More Button Element:
+// Retrieves the HTML button element with the id "load-more-btn" to trigger the loading of additional authors.
+
+// Variables Initialization:
+// Declares variables to store starting and ending indices for slicing author data, and an array to hold author data fetched from an external JSON file.
+
+// Fetch Author Data:
+// Fetches author data from an external JSON file using the fetch API.
+// Converts the response to JSON format.
+// Stores the author data in the "authorDataArr" array and displays the initial set of authors.
+
+// Error Handling:
+// Displays an error message if there is an error loading the authors.
+
+// Fetch More Authors Function:
+// Increases the starting and ending indices to load more authors.
+// Displays the newly fetched authors and disables the "Load More" button if all authors have been loaded.
+
+// Display Authors Function:
+// Dynamically generates HTML elements to display author information.
+// Iterates over the provided authors array and creates a user card for each author.
+
+// Load More Button Event Listener:
+// Listens for a click event on the "Load More" button and calls the fetchMoreAuthors function to load additional authors.
+
+
